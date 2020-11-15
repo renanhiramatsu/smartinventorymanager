@@ -6,16 +6,339 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>635</width>
+    <height>467</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="imgViewLogo">
+      <property name="maximumSize">
+       <size>
+        <width>2000</width>
+        <height>2000</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_Produto">
+        <property name="text">
+         <string>Produto</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_produto"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Reparo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_reparo"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Técnico</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_tecnico">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_inserir">
+        <property name="text">
+         <string>Inserir</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget_items">
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::DashDotLine</enum>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>4</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>Data Recebido</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Número OS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nome</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Reparo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Técnico</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tempo Estimado</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>15/10/2020</string>
+       </property>
+       <property name="flags">
+        <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>1000589</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>iPhone 6s</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>Troca tela, display</string>
+       </property>
+      </item>
+      <item row="0" column="4">
+       <property name="text">
+        <string>Diego</string>
+       </property>
+      </item>
+      <item row="0" column="5">
+       <property name="text">
+        <string>1 semana</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>15/10/2020</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>1000590</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>Xiaomi Mi8</string>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string>Trocar bateria</string>
+       </property>
+      </item>
+      <item row="1" column="4">
+       <property name="text">
+        <string>Diego</string>
+       </property>
+      </item>
+      <item row="1" column="5">
+       <property name="text">
+        <string>5hrs</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>17/10/2020</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>1000591</string>
+       </property>
+      </item>
+      <item row="2" column="2">
+       <property name="text">
+        <string>iPhone X</string>
+       </property>
+      </item>
+      <item row="2" column="3">
+       <property name="text">
+        <string>Trocar bateria</string>
+       </property>
+      </item>
+      <item row="2" column="4">
+       <property name="text">
+        <string>Diego</string>
+       </property>
+      </item>
+      <item row="2" column="5">
+       <property name="text">
+        <string>1 dia</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>17/10/2020</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>1000592</string>
+       </property>
+      </item>
+      <item row="3" column="2">
+       <property name="text">
+        <string>iPhone  8s</string>
+       </property>
+      </item>
+      <item row="3" column="3">
+       <property name="text">
+        <string>Trocar tela</string>
+       </property>
+      </item>
+      <item row="3" column="4">
+       <property name="text">
+        <string>Diego</string>
+       </property>
+      </item>
+      <item row="3" column="5">
+       <property name="text">
+        <string>2 dias</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>17/10/2020</string>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>1000593</string>
+       </property>
+      </item>
+      <item row="4" column="2">
+       <property name="text">
+        <string>Samsung S9</string>
+       </property>
+      </item>
+      <item row="4" column="3">
+       <property name="text">
+        <string>Change usb-c port</string>
+       </property>
+      </item>
+      <item row="4" column="4">
+       <property name="text">
+        <string>Diego</string>
+       </property>
+      </item>
+      <item row="4" column="5">
+       <property name="text">
+        <string>2hrs</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Copyright 2020. © Todos direitos reservados a SmartTecStore.                                                     Producer: Renan Hiramatsu</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>635</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInvent_rio">
+    <property name="title">
+     <string>A Entregar</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuEntregues">
+    <property name="title">
+     <string>Entregues</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuN_o_solucinados">
+    <property name="title">
+     <string>Não solucinados</string>
+    </property>
+   </widget>
+   <addaction name="menuInvent_rio"/>
+   <addaction name="menuEntregues"/>
+   <addaction name="menuN_o_solucinados"/>
+  </widget>
  </widget>
  <resources/>
  <connections/>
