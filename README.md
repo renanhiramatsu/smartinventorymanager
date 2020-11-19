@@ -3,7 +3,7 @@ This GUI system was made to automate the management of the services orders of a 
 The input comes from the person in the front desk, and output to the repair engineer.
 
 # 📱 Preview
-You can see the preview screenshots here. (coming soon)
+You can see the preview screenshots [here.](https://www.renanhiramatsu.com/#3)
 
 # ❗ Future improvements
 - Integration with online database system
